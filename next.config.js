@@ -20,8 +20,8 @@ const nextConfig = {
       },
       {
         protocol: process.env.NEXT_PUBLIC_PROTOCOL,
-        hostname: 'demo-api.foodyman.org'
-      }
+        hostname: "demo-api.foodyman.org",
+      },
     ],
     minimumCacheTTL: 3600,
     dangerouslyAllowSVG: true,
