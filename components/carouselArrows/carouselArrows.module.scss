@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-bg);
+  background-color: var(--secondary-bg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.2s;
+  filter: drop-shadow(0px 10px 15px rgba(129, 129, 129, 0.15));
+  &:hover {
+    border-color: var(--primary);
+  }
+  @media (max-width: 1139px) {
+    display: none;
+  }
+}
+.next {
+  right: 10px;
+}
+.prev {
+  left: 10px;
+}

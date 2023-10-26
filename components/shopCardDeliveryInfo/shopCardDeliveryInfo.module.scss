@@ -1,0 +1,32 @@
+.wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  backdrop-filter: blur(1.5px);
+  border-radius: 100px 200px 0 100px;
+  background: rgba(255, 255, 255, 0.6);
+  .flex {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    width: 100%;
+    padding: 8px 20px 8px 10px;
+    svg {
+      fill: #000;
+    }
+    .text {
+      font-size: 12px;
+      font-weight: 600;
+      color: #000;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .wrapper {
+    left: 0;
+    right: auto;
+    border-radius: 200px 100px 100px 0;
+  }
+}

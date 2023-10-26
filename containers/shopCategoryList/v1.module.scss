@@ -1,0 +1,50 @@
+.container {
+  background-color: var(--secondary-bg);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  @media (max-width: 768px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.shimmer {
+  height: 140px;
+  max-width: 140px;
+  min-width: 80px;
+  border-radius: 12px;
+
+  @media (max-width: 768px) {
+    height: 100px;
+    min-width: 120px;
+  }
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 58px 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  transition: all 0.1s linear;
+
+  &:hover, &.active {
+    background-color: var(--primary);
+  }
+
+  @media (max-width: 768px) {
+    padding: 42px 16px;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+

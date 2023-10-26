@@ -1,0 +1,115 @@
+.wrapper {
+  width: 100%;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: var(--secondary-bg);
+  @media (max-width: 576px) {
+    padding: 15px;
+  }
+  .header {
+    position: relative;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--grey);
+    @media (max-width: 576px) {
+      padding-top: 15px;
+      padding-bottom: 24px;
+    }
+    .title {
+      margin: 0;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 600;
+      color: var(--dark-grey);
+      @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .subtitle {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      margin-top: 10px;
+      .text {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        color: var(--secondary-text);
+        @media (max-width: 576px) {
+          font-size: 14px;
+        }
+      }
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--secondary-text);
+      }
+    }
+    .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      height: 50px;
+      padding: 0 8px;
+      border-radius: 10px;
+      background-color: var(--primary-bg);
+      cursor: default;
+      @media (max-width: 576px) {
+        width: fit-content;
+        height: 36px;
+        padding: 0 4px;
+      }
+      .text {
+        font-weight: 500;
+        color: inherit;
+        @media (max-width: 576px) {
+          font-size: 14px;
+        }
+      }
+      &.approved {
+        color: var(--primary);
+      }
+      &.canceled {
+        color: var(--red);
+      }
+      &.pending {
+        color: var(--dark-blue);
+      }
+    }
+  }
+  .comment {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--grey);
+    @media (max-width: 576px) {
+      padding: 24px 0;
+    }
+    label {
+      font-size: 16px;
+      line-height: 14px;
+      color: var(--secondary-text);
+      @media (max-width: 576px) {
+        font-size: 14px;
+      }
+    }
+    .text {
+      margin: 0;
+      margin-top: 12px;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 600;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        margin-top: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+}

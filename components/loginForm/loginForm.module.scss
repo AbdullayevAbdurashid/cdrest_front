@@ -1,0 +1,89 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  flex: 1 0 50%;
+  @media (max-width: 1139px) {
+    max-width: 100%;
+  }
+  .header {
+    margin-bottom: 10px;
+    .title {
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: 32px;
+      line-height: 39px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        font-size: 27px;
+        line-height: 33px;
+      }
+    }
+    .text {
+      margin: 0;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+      color: var(--dark-blue);
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .space {
+    padding-top: 50px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    .item {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      .label,
+      a {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        color: var(--dark-blue);
+        cursor: pointer;
+      }
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .action {
+    width: 100%;
+  }
+
+  .userInfo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .login, .password {
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    .copy {
+      padding: 4px 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      color: var(--primary);
+    }
+  }
+}

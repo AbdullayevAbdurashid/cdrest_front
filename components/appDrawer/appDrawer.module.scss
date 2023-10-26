@@ -1,0 +1,135 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 330px;
+  height: 100%;
+  padding: 0 10px;
+  margin-top: 45px;
+  @media (max-width: 1139px) {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .actions {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    @media (max-width: 1139px) {
+      flex-basis: 10%;
+    }
+  }
+  .body {
+    display: none;
+    padding: 15px 0;
+    @media (max-width: 1139px) {
+      display: block;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      border-top: 1px solid var(--grey);
+      &:first-of-type {
+        border-top: none;
+      }
+      svg {
+        width: 22px;
+        height: 22px;
+        fill: var(--secondary-text);
+      }
+      .rowItem {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        .text {
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 500;
+        }
+        svg {
+          width: 22px;
+          height: 22px;
+          fill: var(--black);
+        }
+        .bold {
+          font-size: 16px;
+          line-height: 18px;
+          font-weight: 600;
+        }
+      }
+      .badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 24px;
+        border-radius: 100px;
+        background-color: var(--primary);
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+  }
+  .footer {
+    .flex {
+      display: flex;
+      align-items: center;
+      margin-top: 26px;
+      column-gap: 20px;
+      @media (max-width: 1139px) {
+        margin-top: 22px;
+        column-gap: 12px;
+      }
+      .text {
+        width: 60%;
+        margin: 0;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        @media (max-width: 576px) {
+          width: 50%;
+          font-size: 16px;
+          line-height: 21px;
+        }
+      }
+      .item {
+        display: block;
+        flex: 0 1 48%;
+        opacity: 0.5;
+        transition: all 0.1s;
+        .imgWrapper {
+          display: block;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.iconBtn {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  z-index: 2;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  @media (max-width: 576px) {
+    top: 15px;
+    left: 15px;
+  }
+}

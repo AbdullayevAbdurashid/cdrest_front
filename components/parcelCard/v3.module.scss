@@ -1,0 +1,97 @@
+.container {
+  padding: 60px 0;
+  background-color: var(--secondary-bg);
+  @media (width < 576px) {
+    padding: 24px 0;
+  }
+}
+.wrapper {
+  position: relative;
+  height: 530px;
+  img {
+    border-radius: 24px;
+  }
+  @media (width < 576px) {
+    height: 372px;
+  }
+  .backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 24px;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  }
+  .brandLogo {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    z-index: 2;
+    @media (width < 1140px) {
+      bottom: auto;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  .body {
+    position: absolute;
+    left: 64px;
+    bottom: -120px;
+    padding: 45px;
+    z-index: 11;
+    max-width: 530px;
+    border-radius: 24px;
+    background-color: var(--primary);
+    box-shadow: 0px 10px 30px 0px rgba(91, 91, 91, 0.2);
+    @media (width < 1140px) {
+      left: 20px;
+      padding: 26px 20px;
+    }
+    @media (width < 576px) {
+      left: 0;
+      bottom: -190px;
+      max-width: 310px;
+      padding: 26px 20px;
+    }
+    .title {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 120%;
+      color: var(--black);
+      @media (width < 576px) {
+        font-size: 38px;
+      }
+    }
+    .caption {
+      margin: 0;
+      font-size: 20px;
+      line-height: 120%;
+      color: var(--black);
+      @media (width < 576px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .actions {
+    max-width: 200px;
+    margin-top: 70px;
+    @media (width < 576px) {
+      margin-top: 48px;
+    }
+  }
+}
+.space {
+  position: relative;
+  padding-top: 120px;
+  @media (width < 576px) {
+    padding-top: 190px;
+  }
+}

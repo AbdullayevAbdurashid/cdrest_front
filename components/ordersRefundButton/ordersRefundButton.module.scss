@@ -1,0 +1,47 @@
+.root {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  @media (max-width: 576px) {
+    top: 30px;
+  }
+  .textBtn {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    @media (max-width: 576px) {
+      column-gap: 6px;
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--dark-blue);
+      @media (max-width: 576px) {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .text,
+    .bold {
+      font-size: 18px;
+      line-height: 16px;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        font-size: 14px;
+      }
+    }
+    .bold {
+      font-weight: 700;
+    }
+  }
+}
+
+[dir="rtl"] {
+  .root {
+    right: auto;
+    left: 0;
+  }
+}

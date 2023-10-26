@@ -1,0 +1,26 @@
+.container {
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+  background-color: var(--secondary-bg);
+  padding: 10px 0 12px;
+  .wrapper {
+    width: 100%;
+    .showAllBtn {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      .text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+        color: var(--black);
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--black);
+      }
+    }
+  }
+}

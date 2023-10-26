@@ -1,0 +1,40 @@
+.flex {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  margin-top: 8px;
+  @media (max-width: 576px) {
+    margin-top: 2px;
+    flex-wrap: wrap;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    color: var(--black);
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+}
+.textBtn {
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+  @media (max-width: 576px) {
+    font-size: 12px;
+    &:first-child {
+      text-align: left;
+      flex-grow: 1;
+      width: 100%;
+    }
+  }
+}

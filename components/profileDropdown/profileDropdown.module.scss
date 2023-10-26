@@ -1,0 +1,123 @@
+.profileBtn {
+  padding: 10px 0;
+  .imgWrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    @media (max-width: 576px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+.wrapper {
+  min-width: 254px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    border-bottom: 1px solid var(--grey);
+    @media (max-width: 576px) {
+      padding: 15px;
+    }
+    .naming {
+      .title {
+        margin: 0;
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        @media (max-width: 576px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+      .link {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+        letter-spacing: -0.02em;
+        color: var(--blue);
+      }
+    }
+    .profileImage {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      @media (max-width: 576px) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+  .body {
+    padding: 12px 24px;
+    @media (max-width: 576px) {
+      padding: 8px 15px;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--grey);
+      &:last-child {
+        border: none;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        svg {
+          width: 22px;
+          height: 22px;
+          fill: var(--black);
+        }
+        .text {
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 500;
+          letter-spacing: -0.02em;
+        }
+        .bold {
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 600;
+        }
+        @media (max-width: 576px) {
+          column-gap: 12px;
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+      .badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 24px;
+        border-radius: 100px;
+        background-color: var(--primary);
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+  }
+}
+
+[dir="rtl"] {
+  .profileBtn {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}

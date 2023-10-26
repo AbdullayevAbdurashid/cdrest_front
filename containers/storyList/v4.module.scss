@@ -1,0 +1,13 @@
+.storyContainer {
+  padding: 40px 0;
+  .shimmerContainer {
+    display: flex;
+    column-gap: 20px;
+    .shimmer {
+      flex: 1 0 auto;
+      height: auto;
+      aspect-ratio: 1 / 1.4;
+      border-radius: 10px;
+    }
+  }
+}

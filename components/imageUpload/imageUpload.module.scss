@@ -1,0 +1,104 @@
+.fileInput {
+  position: relative;
+  cursor: pointer;
+  .uploadButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px dashed var(--grey);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      border-color: var(--black);
+    }
+    &.error {
+      border-color: var(--red);
+    }
+    .text {
+      margin: 0;
+      margin-top: 8px;
+      color: var(--secondary-text);
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+      fill: var(--secondary-text);
+    }
+  }
+}
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid var(--grey);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    .overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      transition: all 3s ease;
+    }
+  }
+  &.error {
+    border-color: var(--red);
+  }
+  .images {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    background: rgba($color: #000000, $alpha: 0.4);
+    transition: all 0.2s ease;
+    .deleteBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      padding: 0;
+      margin: 0 8px;
+      border-radius: 50%;
+      background-color: rgb(255, 255, 255);
+      .icon {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .fileInput {
+    width: 100%;
+    cursor: pointer;
+    .uploadButton {
+      .text {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

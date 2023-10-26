@@ -1,0 +1,121 @@
+.root {
+  width: 100%;
+  background-color: var(--secondary-bg);
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    column-gap: 24px;
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+      padding: 16px 0;
+    }
+    .shopInfo {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      @media (max-width: 576px) {
+        column-gap: 12px;
+      }
+      .naming {
+        .title {
+          margin: 0;
+          margin-bottom: 4px;
+          font-size: 18px;
+          line-height: 21px;
+          font-weight: 600;
+          @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+        .text {
+          margin: 0;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: -0.02em;
+          color: var(--black);
+        }
+        .shimmerTitle {
+          width: 200px;
+          font-size: 18px;
+          @media (max-width: 576px) {
+            width: 150px;
+            font-size: 16px;
+          }
+        }
+        .shimmerDesc {
+          width: 300px;
+          font-size: 14px;
+          @media (max-width: 576px) {
+            width: 250px;
+          }
+        }
+      }
+    }
+    .statusWrapper {
+      flex: 0 0 40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 100px;
+      background-color: var(--primary-bg);
+      @media (max-width: 576px) {
+        width: 100%;
+        column-gap: 10px;
+        padding: 13px;
+      }
+      .status {
+        text-align: center;
+        padding-left: 20px;
+        @media (max-width: 576px) {
+          padding-left: 10px;
+        }
+        label {
+          font-size: 16px;
+          line-height: 17px;
+          font-weight: 500;
+          letter-spacing: -0.3px;
+          color: var(--black);
+          @media (max-width: 576px) {
+            font-size: 14px;
+          }
+        }
+        .time {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 70px;
+          height: 26px;
+          margin-top: 10px;
+          border-radius: 100px;
+          background-color: var(--dark-blue);
+          user-select: none;
+          .text {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 600;
+            color: var(--secondary-bg);
+          }
+          @media (max-width: 576px) {
+            min-width: 50px;
+            height: 20px;
+            margin-top: 5px;
+            .text {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+      .shimmer {
+        height: 70px;
+        border-radius: 100px;
+      }
+    }
+  }
+}

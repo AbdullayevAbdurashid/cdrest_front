@@ -1,0 +1,111 @@
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // background: linear-gradient(
+      //     180deg,
+      //     rgba(0, 0, 0, 0) 67.85%,
+      //     rgba(0, 0, 0, 0.35) 100%
+      //   ),
+      //   linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 33.46%);
+      // filter: drop-shadow(0px 20px 60px rgba(168, 168, 169, 0.65));
+      z-index: 2;
+      background-color: #000;
+    }
+    .header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 8px;
+      z-index: 12;
+      .stepper {
+        display: flex;
+        width: 100%;
+        column-gap: 6px;
+        .step {
+          position: relative;
+          width: 100%;
+          height: 2px;
+          background-color: rgba($color: #fff, $alpha: 0.6);
+          border-radius: 2px;
+          .completed {
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 1.5s;
+            -webkit-transition: width 1.5s;
+            -moz-transition: width 1.5s;
+            border-radius: 2px;
+          }
+        }
+      }
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        .closeBtn {
+          padding: 4px;
+          svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+          }
+        }
+        .shop {
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+          .title {
+            margin: 0;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 500;
+            color: #fff;
+          }
+          .caption {
+            margin: 0;
+            font-size: 13px;
+            line-height: 15px;
+            font-weight: 500;
+            color: var(--secondary-text);
+          }
+        }
+      }
+    }
+    .storyImage {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: contain;
+      z-index: 3;
+      object-fit: cover;
+      border-radius: 12px;
+      @media(max-width: 768px) {
+        border-radius: 0;
+      }
+
+    }
+    .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 40px;
+      z-index: 12;
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+  

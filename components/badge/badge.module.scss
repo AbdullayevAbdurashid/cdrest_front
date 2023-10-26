@@ -1,0 +1,63 @@
+.badge {
+  &.default {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 6px 12px;
+    width: fit-content;
+    height: 30px;
+    border-radius: 100px;
+  }
+  &.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    border-radius: 50%;
+    .text {
+      display: none;
+    }
+    &.large {
+      width: 30px;
+      height: 30px;
+    }
+    &.medium {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .text {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: inherit;
+  }
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+  &.bonus {
+    background-color: var(--light-blue);
+    color: #fff;
+    svg {
+      fill: #fff;
+    }
+  }
+  &.discount {
+    background-color: var(--red);
+    color: #fff;
+    svg {
+      fill: #fff;
+    }
+  }
+  &.popular {
+    background-color: var(--primary);
+    color: #000;
+    svg {
+      fill: #000;
+    }
+  }
+}

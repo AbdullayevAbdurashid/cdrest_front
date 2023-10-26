@@ -1,0 +1,98 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 8px;
+  margin-top: 40px;
+  @media (max-width: 576px) {
+    margin-top: 30px;
+  }
+  .col {
+    flex: 0 0 60%;
+    @media (max-width: 576px) {
+      flex-basis: 55%;
+    }
+    .title {
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+      line-height: 17px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: var(--secondary-black);
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
+      .red {
+        color: var(--red);
+      }
+    }
+    .desc {
+      margin: 0;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: var(--secondary-text);
+      @media (max-width: 576px) {
+        height: 36px;
+        overflow: hidden;
+      }
+    }
+    .priceContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 16px;
+      @media (max-width: 576px) {
+        display: block;
+      }
+      .price {
+        display: flex;
+        column-gap: 8px;
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 17px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        color: var(--dark-blue);
+        @media (max-width: 576px) {
+          font-size: 16px;
+          margin-top: 22px;
+        }
+        .additionalPrice {
+          margin-left: 8px;
+          font-size: 16px;
+          font-weight: 500;
+          span {
+            color: var(--secondary-text);
+          }
+        }
+        .oldPrice span {
+          color: var(--secondary-text);
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .unit {
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--secondary-text);
+        }
+      }
+    }
+  }
+  .imageWrapper {
+    flex: 0 0 30%;
+    position: relative;
+    padding-top: 17%;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      object-fit: contain;
+    }
+    @media (max-width: 576px) {
+      flex-basis: 45%;
+      padding-top: 40%;
+    }
+  }
+}

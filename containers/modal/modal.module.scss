@@ -1,0 +1,39 @@
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 6px;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  border-radius: 50%;
+  transition: all 0.2s;
+  &:hover {
+    background-color: var(--grey);
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.center {
+  right: 0;
+  left: 0;
+}
+.right {
+  right: 0;
+  left: auto;
+}
+.left {
+  left: 0;
+  right: auto;
+}
+
+[dir="rtl"] {
+  .closeBtn {
+    right: auto;
+    left: 20px;
+  }
+}

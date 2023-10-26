@@ -1,0 +1,40 @@
+.cartBtnWrapper {
+  padding: 14px 14px 14px 24px;
+  background-color: var(--primary);
+  border-radius: 100px;
+  @media (max-width: 1139px) {
+    padding: 0;
+  }
+  .cartBtn {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    @media (max-width: 1139px) {
+      width: 60px;
+      height: 60px;
+      justify-content: center;
+    }
+    svg {
+      fill: #000;
+      width: 24px;
+      height: 24px;
+    }
+    .text {
+      padding: 10px 20px;
+      background-color: #000;
+      border-radius: 100px;
+      @media (max-width: 1139px) {
+        display: none;
+      }
+      span {
+        font-size: 15px;
+        line-height: 12px;
+        letter-spacing: -0.3px;
+        color: #fff;
+      }
+      .price {
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  .wrapper {
+    flex: 1 0 50%;
+    max-height: calc(100% - 141px);
+    padding: 24px 15px;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        margin: 0;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+      }
+      .text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+      }
+    }
+    .body {
+      margin-top: 10px;
+      max-height: 100%;
+      overflow-y: auto;
+    }
+  }
+  .footer {
+    flex: 0 1 10%;
+    padding: 20px 15px;
+    .circleBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--primary-bg);
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--black);
+      }
+    }
+  }
+}

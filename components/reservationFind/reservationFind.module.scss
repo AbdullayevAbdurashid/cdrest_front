@@ -1,0 +1,31 @@
+.wrapper {
+  width: 70vw;
+  padding: 30px;
+  @media (width < 1140px) {
+    width: 100%;
+  }
+  .title {
+    margin: 0;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--dark-blue);
+    @media (max-width: 576px) {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 12px;
+    }
+  }
+  .form {
+    width: 100%;
+    margin-top: 50px;
+    @media (max-width: 576px) {
+      margin-top: 30px;
+    }
+    .loadingBox {
+      position: relative;
+      padding-top: 50vh;
+    }
+  }
+}

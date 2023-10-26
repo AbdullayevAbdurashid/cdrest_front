@@ -1,0 +1,43 @@
+.story {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  &:hover {
+    .wrapper {
+      opacity: 0.35;
+    }
+  }
+  @media (max-width: 1139px) {
+    min-width: 120px;
+  }
+  .wrapper {
+    position: relative;
+    padding-top: 140%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+    background-color: var(--primary-bg);
+    .title {
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      padding: 4px;
+      border-radius: 100px;
+      background-color: rgba($color: #000, $alpha: 0.4);
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 500;
+      color: #fff;
+      z-index: 11;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .story:hover .wrapper {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  width: 100%;
+  padding: 12px 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  .imgWrapper {
+    flex-shrink: 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .block {
+    .naming {
+      display: flex;
+      align-items: center;
+      .title {
+        margin: 0;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 500;
+        padding-right: 24px;
+      }
+      .dot {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--primary);
+      }
+    }
+    .text {
+      margin-top: 0;
+      margin-bottom: 6px;
+    }
+    .muted {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 500;
+      color: var(--secondary-text);
+    }
+  }
+}

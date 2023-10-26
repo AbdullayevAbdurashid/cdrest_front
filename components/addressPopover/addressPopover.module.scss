@@ -1,0 +1,36 @@
+.wrapper {
+  min-width: 300px;
+  max-width: 400px;
+  padding: 24px;
+  @media (max-width: 1139px) {
+    padding: 0;
+  }
+  .label {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .text {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--black);
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 6px 0;
+    margin-top: 10px;
+    @media (max-width: 1139px) {
+      padding: 12px 0;
+      border-top: 1px solid var(--grey);
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+}

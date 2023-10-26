@@ -1,0 +1,50 @@
+.container {
+  background-color: var(--secondary-bg);
+}
+
+.sectionTitle {
+  font-size: 54px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 26px;
+  }
+}
+
+.sectionSubTitle {
+  font-size: 22px;
+  color: var(--secondary-text);
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.heading {
+  position: relative;
+
+  .link {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+
+    @media (max-width: 1139px) {
+      right: 15px;
+    }
+  }
+}

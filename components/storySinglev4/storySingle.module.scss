@@ -1,0 +1,75 @@
+.story {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  &:hover {
+    .wrapper {
+      opacity: 0.35;
+    }
+  }
+  @media (max-width: 1139px) {
+    min-width: 160px;
+  }
+  .wrapper {
+    position: relative;
+    padding-top: 140%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+    .title {
+      position: absolute;
+      bottom: 30px;
+      left: 20px;
+      width: 80%;
+      padding: 4px;
+      font-size: 22px;
+      line-height: 130%;
+      font-weight: 700;
+      color: #fff;
+      z-index: 11;
+      width: max-content;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        left: 4px;
+        bottom: 14px;
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    transform: translateX(-50%);
+    background-color: rgba($color: #fff, $alpha: 0.65);
+    border-radius: 10px;
+    overflow: hidden;
+    .logoWrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 38px;
+      height: 38px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  .shopTitle {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.03;
+  }
+}
+
+[data-theme="dark"] {
+  .story:hover .wrapper {
+    opacity: 0.6;
+  }
+}

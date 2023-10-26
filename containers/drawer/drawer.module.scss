@@ -1,0 +1,32 @@
+.title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  color: var(--dark-blue);
+  @media (max-width: 576px) {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+}
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 4px;
+  svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--black);
+  }
+  @media (max-width: 576px) {
+    top: 15px;
+    right: 15px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

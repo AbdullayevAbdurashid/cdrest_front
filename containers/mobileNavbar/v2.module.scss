@@ -1,0 +1,56 @@
+.container {
+  background-color: var(--secondary-bg);
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    @media (width < 576px) {
+      flex-wrap: wrap;
+    }
+    .showAllBtn {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: var(--primary);
+      .text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        color: var(--black);
+        text-align: left;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--black);
+      }
+    }
+    .actions {
+      display: flex;
+      column-gap: 9px;
+      .btn {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        padding: 11px 19px;
+        border-radius: 5px;
+        background-color: var(--primary-bg);
+        svg {
+          fill: var(--black);
+          width: 16px;
+          height: 16px;
+        }
+        .text {
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

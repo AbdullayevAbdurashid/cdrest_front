@@ -1,0 +1,85 @@
+.container {
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+  background-color: var(--secondary-bg);
+  padding: 12px 30px 0 50px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .navbar {
+      display: flex;
+      height: 56px;
+      margin: 0;
+      padding: 0;
+      column-gap: 30px;
+      list-style-type: none;
+      .navItem {
+        position: relative;
+        .navLink {
+          display: block;
+          height: 100%;
+          padding: 8px;
+          font-size: 18px;
+          line-height: 21px;
+          color: var(--secondary-text);
+          transition: all 0.2s;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            transition: all 0.2s;
+          }
+          &:hover,
+          &.active {
+            color: var(--black);
+            &::after {
+              background-color: var(--black);
+            }
+          }
+        }
+        .active {
+          color: var(--black);
+        }
+      }
+    }
+    .actions {
+      display: flex;
+      column-gap: 20px;
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 8px;
+        height: 100%;
+        padding: 8px;
+        padding-bottom: 23px;
+        transition: all 0.2s;
+        svg {
+          fill: var(--secondary-text);
+          width: 20px;
+          height: 20px;
+          transition: all 0.2s;
+        }
+        .text {
+          font-size: 18px;
+          line-height: 21px;
+          font-weight: 400;
+          color: var(--secondary-text);
+          transition: all 0.2s;
+        }
+        &:hover {
+          svg,
+          .text {
+            color: var(--black);
+            fill: var(--black);
+          }
+        }
+      }
+    }
+  }
+}

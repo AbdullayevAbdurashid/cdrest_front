@@ -1,0 +1,152 @@
+.primaryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  background-color: var(--primary);
+  border-radius: 5px;
+  transition: all 0.2s;
+  @media (max-width: 576px) {
+    height: 48px;
+  }
+  &.disabled {
+    cursor: default;
+    &:hover,
+    &:focus {
+      filter: none;
+    }
+  }
+  .text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #232b2f;
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  svg {
+    fill: #232b2f;
+  }
+  &:hover,
+  &:focus {
+    filter: brightness(90%);
+  }
+  &.small {
+    height: 40px;
+    .text {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  &.medium {
+    content: "";
+  }
+  &.large {
+    content: "";
+  }
+}
+.secondaryBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--dark-blue);
+  transition: all 0.2s;
+  @media (max-width: 576px) {
+    height: 48px;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--dark-blue);
+    transition: all 0.2s;
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  svg {
+    fill: var(--black);
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &.small {
+    height: 40px;
+    .text {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  &.medium {
+    content: "";
+  }
+  &.large {
+    content: "";
+  }
+}
+
+.darkBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+  transition: all 0.2s;
+  @media (max-width: 576px) {
+    height: 48px;
+  }
+  &.disabled {
+    background-color: var(--grey);
+    cursor: default;
+    .text {
+      color: var(--secondary-text);
+    }
+  }
+  .text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--secondary-bg);
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  svg {
+    fill: var(--secondary-bg);
+  }
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+  &.small {
+    height: 40px;
+    .text {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  &.medium {
+    content: "";
+  }
+  &.large {
+    content: "";
+  }
+}

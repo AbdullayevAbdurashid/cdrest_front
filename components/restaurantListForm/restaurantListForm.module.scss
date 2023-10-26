@@ -1,0 +1,77 @@
+.shimmer {
+  width: 100%;
+  height: 55.5px;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  margin-top: 24px;
+  @media (max-width: 1139px) {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+  }
+  .body {
+    flex: 1 0 50%;
+    overflow-y: auto;
+    @media (max-width: 1139px) {
+      overflow-y: visible;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      .label {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+
+        .content {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          .img {
+            border-radius: 50%;
+            object-fit: contain;
+          }
+          .main {
+            display: flex;
+            flex-direction: column;
+            .text {
+              font-size: 16px;
+              line-height: 19px;
+              font-weight: 500;
+              letter-spacing: -0.02em;
+              color: var(--black);
+            }
+            .muted {
+              margin-top: 4px;
+              font-size: 15px;
+              line-height: 19px;
+              font-weight: 500;
+              color: var(--secondary-text);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+    margin-top: 30px;
+    @media (max-width: 1139px) {
+      margin-top: 30px;
+    }
+    .action {
+      flex-grow: 1;
+    }
+  }
+}

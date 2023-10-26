@@ -1,0 +1,24 @@
+.btnWrapper {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  z-index: 1;
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    svg {
+      width: 24px;
+      height: 24px;
+      color: #000;
+    }
+  }
+  @media (max-width: 1139px) {
+    display: block;
+  }
+}

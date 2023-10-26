@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+  .text {
+    margin: 20px 0;
+  }
+  img {
+    width: 350px;
+    @media (width < 576px) {
+      width: 300px;
+    }
+  }
+  .actions {
+    width: 250px;
+    margin: 0 auto;
+  }
+}

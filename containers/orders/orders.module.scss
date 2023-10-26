@@ -1,0 +1,29 @@
+.root {
+  width: 100%;
+  background-color: var(--secondary-bg);
+  .wrapper {
+    position: relative;
+    padding: 40px 0;
+    @media (max-width: 576px) {
+      padding: 30px 0;
+    }
+    .title {
+      margin: 0;
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    .main {
+      margin-top: 6px;
+      @media (max-width: 576px) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

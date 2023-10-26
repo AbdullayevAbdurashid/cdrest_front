@@ -1,0 +1,32 @@
+.badge {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 6px 12px;
+  width: fit-content;
+  height: 30px;
+  background-color: var(--primary);
+  border-radius: 100px;
+  svg {
+    fill: #000;
+    width: 14px;
+    height: 14px;
+  }
+  .text {
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+  }
+  @media (max-width: 576px) {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+    .text {
+      display: none;
+    }
+  }
+}

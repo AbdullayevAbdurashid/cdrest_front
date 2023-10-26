@@ -1,0 +1,22 @@
+.list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+
+    .link {
+        background-color: var(--secondary-bg);
+        border-radius: 10px;
+        padding: 8px 16px;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+            background-color: var(--primary);
+        }
+    }
+
+    .active {
+        background-color: var(--primary);
+    }
+}

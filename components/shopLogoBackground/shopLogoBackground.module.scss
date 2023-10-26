@@ -1,0 +1,67 @@
+.logo {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f4f5f8;
+  border-radius: 10px;
+  .logoWrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    .shimmer {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.large {
+    width: 80px;
+    height: 80px;
+    .logoWrapper {
+      width: 58px;
+      height: 58px;
+    }
+  }
+  &.small {
+    width: 40px;
+    height: 40px;
+    .logoWrapper {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &.medium {
+    content: "";
+  }
+  @media (max-width: 576px) {
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+    .logoWrapper {
+      width: 38px;
+      height: 38px;
+    }
+    &.small {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      .logoWrapper {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    &.large {
+      width: 48px;
+      height: 48px;
+      padding: 5px;
+      .logoWrapper {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
+}

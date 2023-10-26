@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 100%;
+  margin-top: 45px;
+  @media (max-width: 1139px) {
+    width: 100%;
+  }
+  .body {
+    flex: 1 0 50%;
+  }
+  .footer {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+    @media (max-width: 1139px) {
+      margin-top: 40px;
+    }
+    .action {
+      flex: 0 0 49%;
+    }
+  }
+}

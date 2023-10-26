@@ -1,0 +1,46 @@
+.container {
+  background-color: var(--secondary-bg);
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    .showAllBtn {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      .text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+        color: var(--black);
+        text-align: left;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--black);
+      }
+    }
+  }
+}
+
+.drawerWrapper {
+  width: 100%;
+  padding: 15px 0;
+  .item {
+    display: block;
+    padding: 12px 0;
+    .text {
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--black);
+    }
+  }
+  .active .text {
+    font-weight: 700;
+  }
+}

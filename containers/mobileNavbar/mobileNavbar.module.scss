@@ -1,0 +1,50 @@
+.container {
+  background-color: var(--secondary-bg);
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    .showAllBtn {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+      .text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 600;
+        color: var(--black);
+        text-align: left;
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--black);
+      }
+    }
+    .actions {
+      display: flex;
+      column-gap: 10px;
+      .btn {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        height: 36px;
+        padding: 10px 18px;
+        border-radius: 200px;
+        background-color: var(--primary-bg);
+        svg {
+          fill: var(--black);
+          width: 16px;
+          height: 16px;
+        }
+        .text {
+          font-size: 12px;
+          line-height: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

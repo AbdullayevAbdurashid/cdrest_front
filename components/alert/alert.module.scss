@@ -1,0 +1,89 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 10px;
+  border-radius: 10px;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--secondary-black);
+    }
+    &:hover {
+      background-color: var(--secondary-bg);
+    }
+  }
+  &.success,
+  &.warning,
+  &.error,
+  &.info {
+    border: 2px solid var(--primary);
+    background-color: rgba($color: #83ea00, $alpha: 0.2);
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: var(--primary);
+      border-radius: 12px;
+      svg {
+        width: 28px;
+        height: 28px;
+        fill: #fff;
+      }
+    }
+  }
+  &.warning {
+    border: 2px solid var(--orange);
+    background-color: rgba($color: #ffa100, $alpha: 0.2);
+    .icon {
+      background-color: var(--orange);
+    }
+  }
+  &.error {
+    border: 2px solid var(--red);
+    background-color: rgba($color: #ff3d00, $alpha: 0.2);
+    .icon {
+      background-color: var(--red);
+    }
+  }
+  &.info {
+    border: 2px solid var(--blue);
+    background-color: rgba($color: #03758e, $alpha: 0.2);
+    .icon {
+      background-color: var(--blue);
+    }
+  }
+}
+.message {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+  text-align: center;
+  a {
+    color: var(--blue);
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.layout {
+  flex: 1 0 10%;
+  padding: 0 16px;
+}

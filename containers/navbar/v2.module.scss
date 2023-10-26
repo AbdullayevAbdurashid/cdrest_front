@@ -1,0 +1,87 @@
+.container {
+  // position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--secondary-bg);
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    .navbar {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      column-gap: 10px;
+      list-style-type: none;
+      @media (max-width: 1139px) {
+        display: none;
+      }
+      .navItem {
+        position: relative;
+        .moreBtn {
+          display: flex;
+          align-items: center;
+          column-gap: 6px;
+          padding: 14px 16px 14px 24px;
+          color: var(--black);
+          fill: var(--black);
+          transition: all 0.2s;
+          border-radius: 5px;
+          background-color: var(--primary-bg);
+          .text {
+            font-size: 18px;
+            line-height: 22px;
+            color: inherit;
+          }
+          svg {
+            fill: inherit;
+          }
+          &:hover {
+            background-color: var(--primary);
+          }
+        }
+        .navLink {
+          display: block;
+          height: 100%;
+          padding: 14px 30px;
+          font-size: 18px;
+          line-height: 22px;
+          color: var(--black);
+          transition: all 0.2s;
+          border-radius: 5px;
+          background-color: var(--primary-bg);
+          &:hover,
+          &.active {
+            background-color: var(--primary);
+          }
+        }
+        .active {
+          background-color: var(--primary);
+        }
+      }
+    }
+    .actions {
+      display: flex;
+      column-gap: 10px;
+      .btn {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding: 14px 20px;
+        border-radius: 5px;
+        background-color: var(--primary-bg);
+        svg {
+          fill: var(--black);
+          width: 16px;
+          height: 16px;
+        }
+        .text {
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

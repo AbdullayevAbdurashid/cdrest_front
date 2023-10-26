@@ -1,0 +1,73 @@
+.container {
+  padding: 100px 0;
+  background-color: var(--secondary-bg);
+  @media (width < 1140px) {
+    padding: 24px 0;
+  }
+}
+.wrapper {
+  display: flex;
+  height: 530px;
+  border-radius: 24px;
+  overflow: hidden;
+  @media (width < 1140px) {
+    height: 400px;
+  }
+  @media (width < 576px) {
+    display: block;
+    height: auto;
+    min-height: 530px;
+  }
+  .collage {
+    flex: 0 0 55%;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .item {
+      position: relative;
+    }
+    @media (width < 576px) {
+      height: 264px;
+    }
+  }
+  .body {
+    flex: 0 0 45%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary);
+    @media (width < 1140px) {
+      padding: 30px;
+    }
+    @media (width < 576px) {
+      padding: 20px;
+    }
+    .title {
+      margin: 0;
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 120%;
+      color: var(--black);
+      @media (width < 1140px) {
+        font-size: 38px;
+      }
+    }
+    .desc {
+      margin-top: 20px;
+      margin-bottom: 70px;
+      font-size: 20px;
+      line-height: 120%;
+      color: var(--black);
+      @media (width < 1140px) {
+        margin-top: 16px;
+        margin-bottom: 48px;
+        font-size: 16px;
+      }
+    }
+    .actions {
+      max-width: 200px;
+    }
+  }
+}

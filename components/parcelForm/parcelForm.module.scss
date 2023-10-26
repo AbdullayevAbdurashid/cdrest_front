@@ -1,0 +1,127 @@
+.wrapper {
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: var(--secondary-bg);
+  @media (max-width: 576px) {
+    padding: 15px;
+  }
+  .header {
+    margin-bottom: 24px;
+    .title {
+      margin: 0;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 600;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.rowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  background-color: var(--primary-bg);
+  border-radius: 10px;
+  @media (max-width: 576px) {
+    height: 60px;
+    padding: 0 18px;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    svg {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+    }
+    .naming {
+      text-align: left;
+      overflow: hidden;
+      .label {
+        margin-bottom: 6px;
+        font-size: 14px;
+        line-height: 14px;
+        color: var(--secondary-text);
+      }
+      .value {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        color: var(--dark-blue);
+        width: 100%;
+        height: 20px;
+        @media (max-width: 576px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+  .icon {
+    flex-shrink: 0;
+    svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--secondary-text);
+    }
+  }
+
+  .switch {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    @media (max-width: 576px) {
+      column-gap: 14px;
+    }
+    .value {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: var(--secondary-text);
+    }
+  }
+}
+
+.optionItemWrapper {
+  max-width: max-content;
+
+  .optionItem {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: var(--primary-bg);
+    transition: all 0.1s linear;
+
+    &.active {
+      background-color: var(--primary);
+    }
+  }
+}
+
+.spacing {
+  margin-top: 30px;
+}
+
+.map {
+  height: 232px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sticky {
+  position: sticky;
+  top: 100px;
+  right: 0;
+}

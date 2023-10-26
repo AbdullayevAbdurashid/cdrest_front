@@ -1,0 +1,26 @@
+.shareBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 6px;
+  top: 60px;
+  right: 20px;
+  z-index: 2;
+  border-radius: 50%;
+  transition: all 0.2s;
+  &:hover {
+    background-color: var(--grey);
+  }
+  @media (max-width: 768px) {
+    top: -5px;
+    right: 0;
+  }
+}
+
+[dir="rtl"] {
+  .shareBtn {
+    right: auto;
+    left: 20px;
+  }
+}

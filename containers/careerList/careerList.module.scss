@@ -1,0 +1,73 @@
+.root {
+  width: 100%;
+  .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--grey);
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+      padding: 16px;
+      margin-bottom: 10px;
+      border: 1px solid var(--grey);
+      border-radius: 10px;
+    }
+    .naming {
+      flex: 0 0 25%;
+      .title {
+        margin: 0;
+        margin-bottom: 4px;
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--dark-blue);
+        @media (max-width: 576px) {
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 2px;
+        }
+      }
+      .text {
+        margin: 0;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.02em;
+        color: var(--black);
+      }
+    }
+    .actions {
+      margin: 0 16px;
+      @media (max-width: 576px) {
+        position: absolute;
+        bottom: 16px;
+        right: 0;
+      }
+      .arrowBtn {
+        @media (max-width: 576px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: var(--primary-bg);
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: var(--black);
+        }
+      }
+    }
+  }
+  .shimmer {
+    width: 100%;
+    height: 91px;
+    margin-top: 6px;
+    border-radius: 10px;
+  }
+}

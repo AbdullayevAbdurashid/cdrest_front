@@ -1,0 +1,94 @@
+.wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 24px;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  &.active {
+    border-radius: 0px 10px 10px 0px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: var(--primary);
+    }
+  }
+  @media (max-width: 576px) {
+    padding: 14px;
+    &.active {
+      &::before {
+        width: 2px;
+      }
+    }
+  }
+  .header {
+    position: relative;
+    width: 100%;
+    padding-top: 72%;
+    img {
+      transition: all 0.2s;
+      &:hover {
+        filter: brightness(110%);
+      }
+    }
+  }
+  .body {
+    padding-top: 24px;
+    @media (max-width: 576px) {
+      padding-top: 20px;
+    }
+    .title {
+      margin: 0;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 600;
+      color: var(--black);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media (max-width: 576px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    .text {
+      margin: 6px 0;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--secondary-text);
+      height: 54px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media (max-width: 576px) {
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+    }
+    .oldPrice span {
+      color: var(--secondary-text);
+      font-size: 14px;
+    }
+    .price {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 600;
+      color: var(--black);
+      @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .bonus {
+      display: flex;
+      column-gap: 8px;
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      z-index: 1;
+    }
+  }
+}

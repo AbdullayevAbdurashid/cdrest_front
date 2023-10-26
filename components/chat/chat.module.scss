@@ -1,0 +1,45 @@
+.rippleBtn {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 14;
+  &.left {
+    right: 27%;
+  }
+  button {
+    background: transparent;
+    cursor: pointer;
+    background: var(--primary);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      fill: #232b2f;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:focus {
+      outline: none;
+    }
+    @media (max-width: 1139px) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @media (max-width: 1139px) {
+    right: 15px;
+    bottom: 100px;
+    &.left {
+      right: 15px;
+    }
+  }
+}

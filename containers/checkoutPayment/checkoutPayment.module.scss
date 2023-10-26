@@ -1,0 +1,121 @@
+.card {
+  position: sticky;
+  top: 10px;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  .cardHeader {
+    padding: 30px;
+    @media (max-width: 576px) {
+      padding: 20px 15px 30px;
+    }
+    .title {
+      margin: 0;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 600;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      .flexItem {
+        display: flex;
+        align-items: center;
+        column-gap: 18px;
+        @media (max-width: 576px) {
+          column-gap: 14px;
+        }
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+        .text {
+          font-size: 16px;
+          line-height: 17px;
+          font-weight: 500;
+          letter-spacing: -0.3px;
+          color: var(--secondary-black);
+          span {
+            color: inherit;
+          }
+        }
+        .coupon {
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+        }
+      }
+      .action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        min-width: 70px;
+        padding: 0 16px;
+        background-color: var(--primary-bg);
+        border-radius: 1000px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        color: var(--secondary-black);
+      }
+    }
+  }
+  .cardBody {
+    padding: 30px;
+    border-top: 1px solid var(--border);
+    @media (max-width: 576px) {
+      padding: 28px 15px;
+    }
+    .block {
+      padding-bottom: 8px;
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 22px;
+        .item {
+          font-size: 16px;
+          line-height: 17px;
+          letter-spacing: -0.3px;
+          color: var(--secondary-black);
+        }
+      }
+    }
+    .cardFooter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      .btnWrapper {
+        width: 60%;
+      }
+      .priceBlock {
+        text-align: right;
+        .text {
+          margin: 0;
+          margin-bottom: 10px;
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: 500;
+          color: var(--dark-blue);
+        }
+        .price {
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 700;
+          color: var(--dark-blue);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.list {
+  --yellow: #ffc225;
+  --blue: #7995fb;
+  --pink: #ff6aba;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1320px) {
+    gap: 10px
+  }
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  padding: 40px 30px 30px 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media(max-width: 768px) {
+    padding: 20px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .title {
+      font-size: 32px;
+      color: var(--white);
+      font-weight: 700;
+      
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+
+    .button {
+      background-color: var(--white);
+      border-radius: 50px;
+      padding: 2px 20px 2px 2px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: max-content;
+
+      .icon {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      .text {
+        font-size: 14px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .img {
+    object-fit: contain;
+
+    @media (max-width: 768px) {
+      width: 100px; 
+    }
+  }
+}
+
+.yellow {
+  background-color: var(--yellow);
+  .text {
+    color: var(--yellow);
+  }
+}
+
+.blue {
+  background-color: var(--blue);
+  .text {
+    color: var(--blue);
+  }
+}
+
+.pink {
+  background-color: var(--pink);
+  .text {
+    color: var(--pink);
+  }
+}

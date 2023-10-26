@@ -1,0 +1,107 @@
+.wrapper {
+  display: flex;
+  margin: 20px 0;
+  padding: 0 30px;
+  @media (max-width: 1139px) {
+    margin: 25px 0;
+    padding: 0;
+  }
+  .block {
+    flex-grow: 1;
+    margin-right: 8px;
+    .title {
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: var(--secondary-black);
+      .red {
+        color: var(--red);
+      }
+    }
+    .description {
+      margin: 0;
+      font-size: 12px;
+      line-height: 17px;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+      color: var(--secondary-text);
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-top: 16px;
+      column-gap: 24px;
+      .counter {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        border: 1px solid var(--secondary-text);
+        border-radius: 5px;
+        .counterBtn {
+          height: 32px;
+          padding: 0 10px;
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--dark-blue);
+          }
+        }
+        .disabled.counterBtn {
+          cursor: default;
+          svg {
+            fill: var(--secondary-text);
+          }
+        }
+        .count {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: 600;
+          color: var(--dark-blue);
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+          .unit {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--secondary-text);
+          }
+        }
+      }
+      .price {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        color: var(--dark-blue);
+        .oldPrice span {
+          color: var(--secondary-text);
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+  .imageWrapper {
+    flex: 0 0 30%;
+    position: relative;
+    padding-top: 35%;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      object-fit: contain;
+    }
+    .bonus {
+      position: absolute;
+      bottom: 24px;
+      right: 0;
+    }
+    @media (max-width: 1139px) {
+      padding-top: 30%;
+    }
+  }
+}

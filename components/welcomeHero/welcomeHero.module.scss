@@ -1,0 +1,184 @@
+.container {
+  padding-top: 60px;
+  background-color: var(--dark-blue);
+  background-position: center center;
+  background-size: cover;
+  @media (width < 576px) {
+    padding-top: 50%;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    min-height: 70vh;
+    padding: 50px 0;
+    @media (max-width: 576px) {
+      align-items: flex-end;
+      max-width: 100%;
+      min-height: 60vh;
+    }
+    .block {
+      display: block;
+      padding: 30px 40px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(11px);
+      @media (max-width: 576px) {
+        padding: 20px;
+      }
+    }
+    .title {
+      margin: 0;
+      margin-bottom: 38px;
+      font-size: 74px;
+      line-height: 120%;
+      font-weight: 600;
+      color: #fff;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @media (max-width: 576px) {
+        font-size: 44px;
+        margin-bottom: 18px;
+      }
+    }
+    .caption {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 120%;
+      color: #fff;
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+    .searchBar {
+      position: relative;
+      width: 100%;
+      margin-top: 40px;
+      @media (width < 576px) {
+        margin-top: 25px;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding-right: 130px;
+        border: 1px solid #e9e9e9;
+        border-radius: 5px;
+        @media (width < 576px) {
+          padding-right: 75px;
+        }
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          padding: 0 14px;
+          color: #fff;
+          svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+          }
+        }
+        input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          line-height: 22px;
+          color: #fff;
+          background-color: transparent;
+          &::placeholder {
+            color: #fff;
+          }
+          @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+      }
+      .btnWrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 120px;
+        @media (width < 576px) {
+          min-width: 64px;
+        }
+        button {
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+    .actions {
+      width: 100%;
+      margin-top: 16px;
+      text-align: left;
+      .textButton {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        text-decoration: underline;
+        color: #fff;
+        font-size: 16px;
+        &:hover {
+          text-decoration: none;
+        }
+        svg,
+        .text {
+          fill: #fff;
+          color: #fff;
+        }
+      }
+    }
+    .stats {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      @media (width < 576px) {
+        margin-top: 40px;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        padding-left: 30px;
+        @media (width < 576px) {
+          padding-left: 18px;
+          column-gap: 8px;
+        }
+        &:first-child {
+          border-right: 1px solid #fff;
+          padding-right: 30px;
+          padding-left: 0;
+          @media (width < 576px) {
+            padding-right: 18px;
+          }
+        }
+        .number {
+          font-size: 35px;
+          line-height: 120%;
+          font-weight: 600;
+          color: #fff;
+          @media (width < 576px) {
+            font-size: 22px;
+          }
+        }
+        .text {
+          font-size: 16px;
+          line-height: 120%;
+          font-weight: 400;
+          color: #fff;
+          text-transform: lowercase;
+          @media (width < 576px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  @media (width < 576px) {
+    width: 100%;
+    padding: 0;
+  }
+  .imgWrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .header {
+    width: 100%;
+    padding: 10% 50% 5% 30px;
+    background-color: var(--purple);
+    @media (width < 576px) {
+      width: 100vw;
+      padding: 30px;
+      margin-top: -15px;
+      margin-left: -15px;
+    }
+    .title {
+      margin: 0;
+      margin-bottom: 6px;
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 600;
+      color: #000;
+      @media (max-width: 576px) {
+        font-size: 20px;
+      }
+    }
+    .caption {
+      font-size: 16px;
+      line-height: 22px;
+      color: #000;
+    }
+  }
+  .body {
+    flex: 1 0 30%;
+    padding: 50px 60% 50px 30px;
+    @media (width < 576px) {
+      padding: 30px 0;
+    }
+    figure {
+      margin: 0;
+      margin-bottom: 14px;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--secondary-text);
+    }
+  }
+  .footer {
+    padding: 30px 50% 30px 30px;
+    @media (width < 576px) {
+      padding: 30px 0;
+    }
+    .actions {
+      width: 50%;
+      @media (width < 576px) {
+        width: 100%;
+      }
+    }
+  }
+}

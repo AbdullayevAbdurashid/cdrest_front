@@ -1,0 +1,103 @@
+.container {
+  min-height: 51vh;
+  background-color: var(--secondary-bg);
+  border-bottom: 1px solid var(--grey);
+  .header {
+    max-width: 80%;
+    padding-top: 45px;
+    padding-bottom: 26px;
+    @media (max-width: 576px) {
+      max-width: 100%;
+      padding: 32px 0 16px 0;
+    }
+    .title {
+      margin: 0;
+      margin-bottom: 12px;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 600;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 6px;
+      }
+    }
+    .muted {
+      margin: 0;
+      color: var(--secondary-text);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+  }
+  .hero {
+    max-width: 80%;
+    position: relative;
+    padding-top: 30%;
+    margin: 16px 0 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    @media (max-width: 576px) {
+      max-width: 100%;
+      padding-top: 45%;
+      margin: 16px 0 24px;
+    }
+  }
+  .content {
+    position: relative;
+    max-width: 80%;
+    padding-bottom: 50px;
+    line-height: 26px;
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
+  }
+  .sticky {
+    position: sticky;
+    top: 120px;
+    bottom: 20px;
+    width: 100%;
+    @media (max-width: 576px) {
+      position: static;
+    }
+    .share {
+      position: absolute;
+      top: 0;
+      right: -80px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      .shareItem {
+        padding: 0;
+        border: none;
+        outline: none;
+        svg {
+          fill: var(--dark-blue);
+          transition: all 0.2s;
+        }
+        &:hover {
+          svg {
+            fill: var(--primary);
+          }
+        }
+      }
+      @media (max-width: 576px) {
+        position: static;
+        flex-direction: row;
+        column-gap: 24px;
+      }
+    }
+  }
+}

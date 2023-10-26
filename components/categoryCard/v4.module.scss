@@ -1,0 +1,36 @@
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 15px 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  transition: all 0.1s linear;
+
+  &:hover, &.active {
+    background-color: var(--primary);
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px 16px;
+  }
+
+  .img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    @media (max-width: 768px) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}

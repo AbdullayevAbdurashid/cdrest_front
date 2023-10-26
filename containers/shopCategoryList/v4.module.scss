@@ -1,0 +1,51 @@
+.slideItem {
+  max-width: max-content;
+}
+
+.slider {
+  padding: 40px 0;
+
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
+}
+
+.shimmer {
+  height: 60px;
+  max-width: 200px;
+  min-width: 170px;
+  border-radius: 12px;
+
+  @media (max-width: 768px) {
+    height: 80px;
+    min-width: 120px;
+  }
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 18px 26px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: max-content;
+  transition: all 0.1s linear;
+
+  &:hover, &.active {
+    background-color: var(--primary);
+  }
+
+  @media (max-width: 768px) {
+    padding: 13px 16px;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
+

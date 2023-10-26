@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  @media (max-width: 1139px) {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+    @media (max-width: 1139px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .trashBtn {
+    padding: 0 5px;
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--black);
+    }
+  }
+}

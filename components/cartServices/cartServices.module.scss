@@ -1,0 +1,66 @@
+.wrapper {
+  padding: 0 30px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1139px) {
+    padding: 0;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    &:first-child {
+      border: none;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      .icon {
+        position: relative;
+        z-index: 1;
+        .greenDot {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+          background-color: var(--primary);
+        }
+        svg {
+          width: 34px;
+          height: 34px;
+          fill: var(--dark-blue);
+        }
+      }
+      .row {
+        .title {
+          margin: 0;
+          margin-bottom: 2px;
+          font-size: 16px;
+          line-height: 17px;
+          font-weight: 500;
+          letter-spacing: -0.3px;
+          color: var(--secondary-black);
+        }
+        .text {
+          margin: 0;
+          font-size: 12px;
+          line-height: 17px;
+          font-weight: 500;
+          letter-spacing: -0.3px;
+          color: var(--secondary-text);
+        }
+      }
+    }
+    .price {
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--dark-blue);
+    }
+  }
+}

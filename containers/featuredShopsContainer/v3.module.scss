@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  padding: 60px 0;
+  @media (width < 576px) {
+    padding: 24px 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 30px;
+    @media (max-width: 576px) {
+      margin-bottom: 12px;
+    }
+    .title {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 30px;
+      color: var(--black);
+      @media (max-width: 1139px) {
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    .link {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      color: var(--dark-blue);
+      opacity: 1;
+      transition: all 0.2s;
+      &:hover {
+        opacity: 0.6;
+      }
+      @media (width < 576px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+  .wrapper {
+    display: grid; 
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    @media (width < 576px) {
+      gap: 9px;
+    }
+    .item {
+      flex: 0 0 23%;
+      @media (width < 1140px) {
+        flex: 0 0 48%;
+      }
+      @media (width < 576px) {
+        flex: 1 0 100%;
+      }
+    }
+    .shimmer {
+      flex: 0 0 23%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      border-radius: 24px;
+      @media (width < 1140px) {
+        flex: 0 0 48%;
+      }
+      @media (width < 576px) {
+        flex: 1 0 100%;
+      }
+    }
+  }
+}

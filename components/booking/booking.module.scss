@@ -1,0 +1,70 @@
+.wrapper {
+  position: relative;
+  min-width: 532px;
+  max-width: 532px;
+  padding: 30px;
+  @media (max-width: 1139px) {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px 0;
+    max-height: 80vh;
+  }
+  .header {
+    margin-bottom: 24px;
+    .title {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        font-size: 20px;
+      }
+    }
+    .text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--secondary-text);
+      @media (max-width: 576px) {
+        padding-right: 10px;
+      }
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 1rem;
+    @media (max-width: 576px) {
+      column-gap: 10px;
+    }
+    .phoneNumber {
+      flex: 1 0 100%;
+      margin-top: 30px;
+      @media (max-width: 576px) {
+        flex-direction: column;
+        row-gap: 16px;
+        width: 100%;
+      }
+      .errorText {
+        margin: 0;
+        margin-top: 8px;
+        color: var(--red);
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  .footer {
+    padding-top: 30px;
+    .btnWrapper {
+      width: 50%;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+  }
+}

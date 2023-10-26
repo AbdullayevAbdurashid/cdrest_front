@@ -1,0 +1,115 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  flex: 1 0 50%;
+  @media (max-width: 1139px) {
+    max-width: 100%;
+  }
+  .header {
+    margin-bottom: 10px;
+    .title {
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: 32px;
+      line-height: 39px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: var(--dark-blue);
+      @media (max-width: 576px) {
+        font-size: 27px;
+        line-height: 33px;
+      }
+    }
+    .text {
+      margin: 0;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+      color: var(--dark-blue);
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      @media (max-width: 576px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  .resend {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .space {
+    padding-top: 50px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    .item {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+      .label,
+      a {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        color: var(--dark-blue);
+        cursor: pointer;
+      }
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 16px;
+    .item:last-child {
+      flex: 1 0 60%;
+    }
+    @media (max-width: 576px) {
+      column-gap: 10px;
+    }
+  }
+  .otpContainer {
+    @media (max-width: 768px) {
+      gap: 0.1rem;
+    }
+    justify-content: space-between;
+    gap: 0.5rem;
+    input {
+      width: 56px !important;
+      height: 64px !important;
+      padding: 10px;
+      font-size: 25px;
+      text-align: center;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      transition: all 0.2s linear;
+      color: var(--secondary-black);
+      justify-content: center;
+      &:focus {
+        border-color: var(--primary);
+      }
+      @media (max-width: 470px) {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 16px;
+      }
+    }
+  }
+}

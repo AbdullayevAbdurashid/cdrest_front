@@ -1,0 +1,6 @@
+.wrapper {
+    margin-top: 20px;
+    @media (max-width: 576px) {
+      margin-top: 14px;
+    }
+  }

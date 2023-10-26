@@ -1,0 +1,86 @@
+.extrasWrapper {
+  padding: 30px 0;
+  border-top: 1px solid var(--border);
+  .extraTitle {
+    margin: 0;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-transform: capitalize;
+  }
+  .extraGroup {
+    margin-top: 20px;
+    .radioGroup,
+    .checkboxGroup {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      transition: all 0.2s;
+      .label {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.02em;
+        font-weight: 500;
+        cursor: pointer;
+        user-select: none;
+        .text {
+          color: var(--black);
+        }
+        .mute,
+        .mute span {
+          margin-left: 4px;
+          color: var(--secondary-text);
+        }
+      }
+    }
+    .checkboxGroup {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.checkboxGroup:hover {
+  .btn {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    opacity: 1;
+  }
+  .symbol {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--grey);
+    opacity: 0;
+    transition: opacity 0.2s;
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--dark-blue);
+    }
+  }
+  .text {
+    margin: 0 6px;
+    font-weight: 500;
+    cursor: default;
+  }
+  .symbol {
+    font-weight: 500;
+    opacity: 1;
+    cursor: default;
+    transition: opacity 0.2s;
+  }
+}

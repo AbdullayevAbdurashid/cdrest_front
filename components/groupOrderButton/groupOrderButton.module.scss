@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  height: 50px;
+  padding: 0 20px;
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+  svg {
+    fill: var(--secondary-bg);
+  }
+  .text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    color: var(--secondary-bg);
+  }
+  @media (max-width: 576px) {
+    width: 100%;
+    height: 48px;
+    justify-content: center;
+  }
+  &.green {
+    background-color: var(--primary);
+    svg {
+      fill: var(--dark-blue);
+    }
+    .text {
+      color: var(--dark-blue);
+    }
+  }
+}

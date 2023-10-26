@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--secondary-bg);
+  box-shadow: var(--cart-box-shadow);
+  .body {
+    flex: 1 0 50%;
+    overflow-y: auto;
+    padding-top: 30px;
+    .empty {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  @media (max-width: 1139px) {
+    min-height: 50vh;
+    max-height: 80vh;
+    padding: 10px 0;
+    box-shadow: none;
+  }
+}
