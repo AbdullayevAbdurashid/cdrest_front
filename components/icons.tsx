@@ -1,16 +1,17 @@
-import {
-  BRAND_LOGO,
-  BRAND_LOGO_DARK,
-  BRAND_LOGO_ROUNDED,
-} from "constants/config";
+import { BRAND_LOGO_ROUNDED } from "constants/config";
 
 /* eslint-disable @next/next/no-img-element */
 export const BrandLogo = () => (
-  <img src={BRAND_LOGO} width="129" height="28" alt="Brand logo" />
+  <img src={"/images/logo.png"} width="189" height="48" alt="Brand logo" />
 );
 
 export const BrandLogoDark = () => (
-  <img src={BRAND_LOGO_DARK} width="129" height="28" alt="Brand logo dark" />
+  <img
+    src={"/images/logo_black.png"}
+    width="189"
+    height="48"
+    alt="Brand logo dark"
+  />
 );
 
 export const DoubleCheckIcon = () => (
